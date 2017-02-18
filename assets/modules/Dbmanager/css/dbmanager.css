@@ -1,0 +1,21 @@
+/*     
+Document   : Database Manager
+Created on : December 7, 2015
+Author     : Rance Aaron
+Description:        Stylesheet for db manager module
+*/
+
+div#dbtype{
+    position: relative;
+    top: 10px;    
+    text-align: right;
+    margin-right: 5px;
+}
+
+div.msg{
+    text-align:center;
+}
+
+select#target{
+    width: 100%;
+}
