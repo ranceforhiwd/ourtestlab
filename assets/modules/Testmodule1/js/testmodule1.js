@@ -5,7 +5,7 @@
  */
 $( document ).ready(function() {
     /**********************Calendar Section ***************************/
-    var calObj1 = {name: 'rance'}
+    var calObj1 = {name: 'rance'};
     /********************* Module DataTable section********************/
     
     var tblObj1 = {
@@ -21,11 +21,5 @@ $( document ).ready(function() {
       
     /**********************Instanciate objects *************************/
     var testMod = Object.create(Module);    
-    var c = [];    
-    var t = [];
-    t.push(tblObj1);
-    t.push(tblObj2);
-    c.push(calObj1);
-    testMod.init('My Test Module',t, c);
-    console.log('running module'); 
+    testMod.init('My Test Module',[tblObj1,tblObj2], [calObj1]);
 });
