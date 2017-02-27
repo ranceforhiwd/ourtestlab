@@ -11,6 +11,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbar1">
                         <ul class="nav navbar-nav navbar-right">
+                                <li><a id="docs" class="main_menu">API Docs</a></li>
                                 <?php if ($this->session->userdata('login')){ ?>
                                 <li><p class="navbar-text">Hello <?php echo $this->session->userdata('uname'); ?></p></li>
                                 <li><a href="<?php echo base_url(); ?>index.php/home/logout">Log Out</a></li>
