@@ -17,8 +17,8 @@ class Docs extends MX_Controller {
 	}
         
         public function phpdoc(){
-            $output = shell_exec('phpdoc -d application/  -t documentation');
-            echo "<pre>$output</pre>";
+            $output = shell_exec('ls');
+            exit(json_encode($output));
         }
                 
 }
