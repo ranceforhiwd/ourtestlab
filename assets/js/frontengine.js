@@ -72,7 +72,8 @@ var Table = {
     /**
      * @function init
      * @memberOf Module
-     * @description Initialize module object using arrays of frontend objects as parameters to build a module.
+     * @description Initialize module object using arrays of frontend objects 
+     * as parameters to build a module.
      * @param {string} name Module name
      * @param {array} tbl Array of table objects
      * @param {array} cal Array of calendar objects
