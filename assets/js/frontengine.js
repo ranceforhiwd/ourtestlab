@@ -2,8 +2,10 @@
  * 
  * @class Table
  * @type object
- *  
- * @description Wrapper for {@link https://datatables.net DataTables}. Table objects allow easy construction for data tables with connections to the data sources.
+ * @version 1.5 Under Git control and Grunt task managers. 
+ * @description Wrapper for {@link https://datatables.net DataTables}.
+ *  Table objects allow easy construction for data tables with connections 
+ *  to the data sources.
  * 
  */
 var Table = {
