@@ -97,10 +97,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'voluntee_testdb',
-	'password' => 'ra121588',
-	'database' => 'voluntee_testdb',
+	'hostname' => 'hiwd.biz',
+	'username' => 'hiwd_testlab',
+	'password' => 'Ra121588*',
+	'database' => 'hiwd_testlab',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
