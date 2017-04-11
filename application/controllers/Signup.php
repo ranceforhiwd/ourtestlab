@@ -1,7 +1,8 @@
 <?php
 class Signup extends CI_Controller
 {
-	public function __construct(){
+	public function __construct()
+	{
 		parent::__construct();
 		$this->load->helper(array('form','url'));
 		$this->load->library(array('session', 'form_validation'));
@@ -9,7 +10,8 @@ class Signup extends CI_Controller
 		$this->load->model('user_model');
 	}
 	
-	function index(){
+	function index()
+	{
 		// set form validation rules
 		$this->form_validation->set_rules('fname', 'First Name', 'trim|required|alpha|min_length[3]|max_length[30]|xss_clean');
 		$this->form_validation->set_rules('lname', 'Last Name', 'trim|required|alpha|min_length[3]|max_length[30]|xss_clean');
@@ -18,9 +20,14 @@ class Signup extends CI_Controller
 		$this->form_validation->set_rules('cpassword', 'Confirm Password', 'trim|required');
 		
 		// submit
-		if ($this->form_validation->run() == FALSE){			
-			$this->load->view('home_view');
-                }else{			
+		if ($this->form_validation->run() == FALSE)
+        {
+			// fails
+			$this->load->view('signup_view');
+        }
+		else
+		{
+			//insert user details into db
 			$data = array(
 				'fname' => $this->input->post('fname'),
 				'lname' => $this->input->post('lname'),
@@ -28,10 +35,14 @@ class Signup extends CI_Controller
 				'password' => $this->input->post('password')
 			);
 			
-			if ($this->user_model->insert_user($data)){
+			if ($this->user_model->insert_user($data))
+			{
 				$this->session->set_flashdata('msg','<div class="alert alert-success text-center">You are Successfully Registered! Please login to access your Profile!</div>');
 				redirect('signup/index');
-			}else{				
+			}
+			else
+			{
+				// error
 				$this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Oops! Error.  Please try again later!!!</div>');
 				redirect('signup/index');
 			}
