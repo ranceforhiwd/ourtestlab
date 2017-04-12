@@ -19,10 +19,10 @@ class Signup extends CI_Controller
 		$this->form_validation->set_rules('cpassword', 'Confirm Password', 'trim|required');
 		
 		// submit
-		if ($this->form_validation->run() == FALSE){
+		if ($this->form_validation->run() == true){
 			// fails
-			$this->load->view('signup_view');
-                        $this->load->view('home_view');
+			//$this->load->view('signup_view');
+                        //$this->load->view('home_view');
                 }else{
 			//insert user details into db
 			$data = array(
