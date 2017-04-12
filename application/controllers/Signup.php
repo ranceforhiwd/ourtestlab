@@ -9,8 +9,12 @@ class Signup extends CI_Controller
 		$this->load->database();
 		$this->load->model('user_model');
 	}
+        
+        function index(){
+            $this->load->view('signup_view');
+        }
 	
-	function index(){
+	function index_bk(){
 		// set form validation rules
 		/*$this->form_validation->set_rules('fname', 'First Name', 'trim|required|alpha|min_length[3]|max_length[30]');
 		$this->form_validation->set_rules('lname', 'Last Name', 'trim|required|alpha|min_length[3]|max_length[30]');
@@ -19,7 +23,7 @@ class Signup extends CI_Controller
 		$this->form_validation->set_rules('cpassword', 'Confirm Password', 'trim|required');*/
 		
 		// submit
-		if (isset($_POST)){
+		if (!empty($_POST)){
                     $data = array(
 				'fname' => $this->input->post('fname'),
 				'lname' => $this->input->post('lname'),
@@ -28,7 +32,7 @@ class Signup extends CI_Controller
 			);
                         exit(print_r($data));
 			// fails
-			//$this->load->view('signup_view');
+			$this->load->view('signup_view');
                         //$this->load->view('home_view');
                 }else{
 			//insert user details into db
