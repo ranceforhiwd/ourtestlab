@@ -31,14 +31,14 @@ var Gears = {
     },
     createGears: function() {
         
-        var width = 910,
+        var width = 450,
             height = 450,
             radius = 60,
             x = Math.sin(2 * Math.PI / 3),
             y = Math.cos(2 * Math.PI / 3);
 
         var offset = 0,
-            speed = 4,
+            speed = 3,
             start = Date.now();
 
         var svg = d3.select("div.d3space").append("svg")
