@@ -29,7 +29,7 @@ $("body").on ("click", "a.main_menu", function () {
 
 $("body").on ("click", "a.sub_menu", function () {
     var parm = {
-        url: '/'+this.id,
+        url: '../'+this.id,
         data:{mod_name:this.id},
         dataType:'text'
     };
