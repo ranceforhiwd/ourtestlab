@@ -9,7 +9,7 @@ $("body").on ("click", "a.header", function () {
         type: "POST",
         url: this.id+'/index',
         success: function(resp){        
-            $("html body div#main.container div#module-container.row ").html(resp);
+            $("html body div#main.container div#module-container").html(resp);
         }   
     });   
 });
