@@ -31,9 +31,9 @@ var Gears = {
     },
     createGears: function() {
         
-        var width = 450,
-            height = 450,
-            radius = 60,
+        var width = 425,
+            height = 425,
+            radius = 55,
             x = Math.sin(2 * Math.PI / 3),
             y = Math.cos(2 * Math.PI / 3);
 
