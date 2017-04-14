@@ -9,7 +9,7 @@ $("body").on ("click", "a.header", function () {
         type: "POST",
         url: this.id+'/index',
         success: function(resp){        
-            $("html body div#main.container div#module-container.row div#module.col-md-9").html(resp);
+            $("html body div#main.container div#module-container.row ").html(resp);
         }   
     });   
 });
@@ -23,7 +23,21 @@ $("body").on ("click", "a.main_menu", function () {
     };
     
     AjaxController.do_ajax(parm).done(function(x){        
-        $("div#module-container.row div#module.col-md-9").html(x);
+        $("div#module-container ").html(x);
+    });        
+});
+
+$("body").on ("click", "a.sub_menu", function () {
+    var parm = {
+        url: '../'+this.id,
+        data:{mod_name:this.id},
+        dataType:'text'
+    };
+    
+    $("body div#main.container div.d3space").hide();
+    
+    AjaxController.do_ajax(parm).done(function(x){        
+        $("div#module-container ").html(x);
     });        
 });
 /**

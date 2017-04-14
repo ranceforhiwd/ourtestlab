@@ -4,10 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-<?php include 'header_view.php';?>
-<div class="container">
-	<div class="row">
+<body>	
 		<div class="col-md-4">
 			<h4>Profile Summary</h4>
 			<hr/>
@@ -20,8 +17,6 @@
 			<p>lorem ipsum dolum</p>
 			<p>lorem ipsum dolum</p>
 			<p>...</p>
-		</div>
-	</div>
-</div>
+		</div>	
 </body>
 </html>
