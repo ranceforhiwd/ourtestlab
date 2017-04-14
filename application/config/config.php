@@ -23,13 +23,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-if($_SERVER['SERVER_NAME'] == 'localhost'){
+if($_SERVER['SERVER_ADDR'] == '127.0.0.1'){
     $config['base_url'] = '';
-}
-
-/*else{
+}else{
     $config['base_url'] = 'http://hiwd.biz/testlab/';
-}*/
+}
 
 /*
 |--------------------------------------------------------------------------
