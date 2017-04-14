@@ -13,6 +13,5 @@
     <script type="text/javascript" src="<?php echo base_url(); ?>/assets/js/main.js"></script>
     <script type="text/javascript" src="<?php echo base_url(); ?>/assets/js/d3projects.js"></script>    
     <script type="text/javascript" src="<?php echo base_url(); ?>/assets/js/startpage.js"></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>/assets/js/testlb.js"></script>
 </body>
 </html>

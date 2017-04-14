@@ -7,12 +7,12 @@ class User_model extends CI_Model
         parent::__construct();
     }
 	
-	function get_user($email, $pwd)
-	{
-		$this->db->where('email', $email);
-		$this->db->where('password', md5($pwd));
-        $query = $this->db->get('user');
-		return $query->result();
+	function get_user($email, $pwd){
+            $this->db->where('email', $email);
+            //$this->db->where('password', md5($pwd));
+            $this->db->where('password', $pwd);
+            $query = $this->db->get('user');            
+            return $query->result();
 	}
 	
 	// get user
@@ -25,8 +25,8 @@ class User_model extends CI_Model
         
         // get user
 	function get_user_modules($id){
-		$this->db->where('userid', $id);
-                $this->db->join('modules', 'modules.moduleid = user_module.moduleid', 'left');
+		$this->db->where('user_id', $id);
+                $this->db->join('modules', 'modules.module_id = user_module.module_id', 'left');
                 $query = $this->db->get('user_module');
 		return $query->result();
 	}

@@ -24,7 +24,8 @@ class Login extends CI_Controller
         }else{
                 // check for user credentials
                 $uresult = $this->user_model->get_user($email, $password);
-                if (count($uresult) >= 0){
+               
+                if (count($uresult) > 0){
                         // set session
                         $sess_data = array('login' => TRUE, 'uname' => $uresult[0]->fname, 'uid' => $uresult[0]->id);
                         $this->session->set_userdata($sess_data);

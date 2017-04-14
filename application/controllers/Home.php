@@ -12,7 +12,7 @@ class Home extends CI_Controller{
 		$this->load->view('home_view');
 	}
         
-        function validate_login(){            
+        function validate_login(){             
             $details = $this->user_model->get_user_by_id($this->session->userdata('uid'));
             
             if(isset($details) && !empty($details)){
