@@ -7,8 +7,10 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-4 col-md-offset-4 well">
-			<?php $attributes = array("name" => "signupform");
-			echo form_open("signup/index", $attributes);?>
+			<?php 
+                            $attributes = array("name" => "signupform");
+                            echo form_open("signup/subscribe", $attributes);
+                        ?>
 			<legend>Signup</legend>
 			
 			<div class="form-group">

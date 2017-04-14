@@ -34,7 +34,7 @@ class Home extends CI_Controller{
             $data = array('login' => '', 'uname' => '', 'uid' => '');
             $this->session->unset_userdata($data);
             $this->session->sess_destroy();
-            redirect('home/index');
+            redirect('home');
 	}
 }
 
