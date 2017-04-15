@@ -93,7 +93,7 @@ function get_user_menu(u){
         if(x != false){
             $("ul.dropdown-menu").empty();
             for(var i in x){
-                 $("ul.dropdown-menu").append('<li><a id="'+x[i]['name']+'" class="sub_module"><span class="modulelabel">'+x[i]['label']+'</span></a></li>');
+                 $("ul.dropdown-menu").append('<li id="'+x[i]['module_id']+'"><a id="'+x[i]['name']+'" class="sub_module"><span class="modulelabel">'+x[i]['label']+'</span></a></li>');
             }               
         }
     });
