@@ -4,6 +4,7 @@
  * @since 12-29-2016
  */
 $( document ).ready(function() {
+   
     /**********************Calendar Section ***************************/
     var calObj1 = {name: 'rance'};
     /********************* Module DataTable section********************/
@@ -20,9 +21,6 @@ $( document ).ready(function() {
     };    
       
     /**********************Instanciate objects *************************/
-   // var testMod = Object.create(Module);    
-    //testMod.init('My Test Module',[tblObj1,tblObj2], [calObj1]);
-    
+    var testMod = Object.create(Module);    
+    testMod.init('My Test Module',[tblObj1,tblObj2], [calObj1]);
 });
-
-console.log('breakpoint');
