@@ -35,7 +35,7 @@ $("body").on ("click", "a.sub_module", function () {
     };
     
     AjaxController.do_ajax(parm).done(function(x){        
-        $("div#module-container div#container").html(x);
+        $("div#module-container").html(x);
     });        
 });
 

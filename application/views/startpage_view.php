@@ -7,10 +7,10 @@
 	<?php include 'cdns.php' ?>        
 </head>
 <body>
-    <?php include 'header_view.php';?>
-    <?php include 'default_view.php';?>
     <script type="text/javascript" src="<?php echo base_url(); ?>/assets/js/frontengine.js"></script>
     <script type="text/javascript" src="<?php echo base_url(); ?>/assets/js/main.js"></script>
+    <?php include 'header_view.php';?>
+    <?php include 'default_view.php';?>    
     <script type="text/javascript" src="<?php echo base_url(); ?>/assets/js/d3projects.js"></script>    
     <script type="text/javascript" src="<?php echo base_url(); ?>/assets/js/startpage.js"></script>
 </body>
