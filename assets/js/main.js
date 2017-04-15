@@ -27,6 +27,18 @@ $("body").on ("click", "a.main_menu", function () {
     });        
 });
 
+$("body").on ("click", "a.sub_module", function () {
+    var parm = {
+        url: '../'+jsUcfirst(this.id)+'/'+this.id,
+        data:{mod_name:this.id},
+        dataType:'text'
+    };
+    
+    AjaxController.do_ajax(parm).done(function(x){        
+        $("div#module-container ").html(x);
+    });        
+});
+
 $("body").on ("click", "a.sub_menu", function () {
     var parm = {
         url: '../'+this.id,
@@ -81,7 +93,7 @@ function get_user_menu(u){
         if(x != false){
             $("ul.dropdown-menu").empty();
             for(var i in x){
-                 $("ul.dropdown-menu").append('<li><a id="'+x[i]['name']+'" class="sub_menu"><span class="modulelabel">'+x[i]['label']+'</span></a></li>');
+                 $("ul.dropdown-menu").append('<li><a id="'+x[i]['name']+'" class="sub_module"><span class="modulelabel">'+x[i]['label']+'</span></a></li>');
             }               
         }
     });
