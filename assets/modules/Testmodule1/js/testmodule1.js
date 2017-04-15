@@ -22,5 +22,7 @@ $( document ).ready(function() {
     /**********************Instanciate objects *************************/
    // var testMod = Object.create(Module);    
     //testMod.init('My Test Module',[tblObj1,tblObj2], [calObj1]);
-    console.log('breakpoint');
+    
 });
+
+console.log('breakpoint');
