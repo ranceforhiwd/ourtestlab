@@ -79,9 +79,9 @@ function get_user_menu(u){
     
     AjaxController.do_ajax(parm).then(function(x){
         if(x != false){
-            $("ul#modlist.main_menu").empty();
+            $("ul.dropdown-menu").empty();
             for(var i in x){
-                 $("ul#modlist.main_menu").append('<li id="userid" class="category"><a id="'+x[i]['name']+'" class="main_menu"><span class="type">'+x[i]['name']+'</span></a></li>');
+                 $("ul.dropdown-menu").append('<li><a id="'+x[i]['name']+'" class="sub_menu"><span class="modulelabel">'+x[i]['label']+'</span></a></li>');
             }               
         }
     });

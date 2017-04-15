@@ -16,10 +16,7 @@
                                 <li class="dropdown">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Modules
                                     <span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                      <li><a href="#">mod-1</a></li>
-                                      <li><a href="#">mod-2</a></li>                                     
-                                    </ul>
+                                    <ul class="dropdown-menu"></ul>
                                 </li>
                                 <li class="dropdown">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $this->session->userdata('uname'); ?>
