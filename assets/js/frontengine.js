@@ -98,9 +98,9 @@ var Table = {
      * @returns {void}
      */
     createModule: function() {        
-        $("div#module").html('<div class="mod" />');
+        $("body div#main.container.row.col-md-12 div#module-container div#container").html('<div class="mod" />');
         $("div.mod").append('<div class="row"><h3>'+this.name+'</h3></div>');
-        $("div.mod").append('<div class="module_content row"></div>');
+        $("div.mod").append('<div class="module_content"></div>');
         var t = [];
         var c = [];
         var ch = [];
