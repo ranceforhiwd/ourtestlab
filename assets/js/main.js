@@ -34,8 +34,7 @@ $("body").on ("click", "a.sub_module", function () {
         dataType:'text'
     };
     
-    AjaxController.do_ajax(parm).done(function(x){
-        console.log(x);
+    AjaxController.do_ajax(parm).done(function(x){        
         $("div#module-container div#container").html(x);
     });        
 });
