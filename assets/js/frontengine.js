@@ -99,8 +99,8 @@ var Table = {
      */
     createModule: function() {        
         $("body div#main.container.row.col-md-12 div#module-container div#container").html('<div class="mod" />');
-        $("div.mod").append('<div class="row"><h3>'+this.name+'</h3></div>');
-        $("div.mod").append('<div class="module_content row"></div>');
+        $("div.mod").append('<div class="row"><h3 style="padding:25px;">'+this.name+'</h3></div>');
+        $("div.mod").append('<div style="padding:25px;" class="module_content row"></div>');
         var t = [];
         var c = [];
         var ch = [];
@@ -151,7 +151,7 @@ var Calendar = {
        
     },
     createCalendar: function() {
-        $(" div#module div.mod div.module_content").append('<div id="calendar"></div>');              
+        $(" div#module-container div.mod div.module_content.row").append('<div id="calendar"></div>');              
     }
 };
 /**

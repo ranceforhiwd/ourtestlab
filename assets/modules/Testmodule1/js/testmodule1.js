@@ -12,7 +12,7 @@ $( document ).ready(function() {
     var tblObj1 = {
                     columns : ["id","name","position","office","age","startdate","salary"],   
                     url : '../Testmodule1/Testmodule1/getData',   
-                    name : 'breakpoint'
+                    name : 'tableobject1'
     }, 
     tblObj2 = {
                 columns : ["id","name","salary"],   

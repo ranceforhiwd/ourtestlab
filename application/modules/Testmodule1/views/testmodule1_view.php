@@ -7,8 +7,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <script type="text/javascript" src="<?php echo base_url(); ?>/assets/modules/Testmodule1/js/testmodule1.js""></script>      
 </head>
 <body>
-    <div id="container">
-        <p>Module 1 content here.</p>
-    </div>
+    <div id="container"></div>
 </body>
 </html>

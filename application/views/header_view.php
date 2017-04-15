@@ -16,12 +16,12 @@
                                 <li class="dropdown">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Modules
                                     <span class="caret"></span></a>
-                                    <ul class="dropdown-menu"></ul>
+                                    <ul id="modules" class="dropdown-menu"></ul>
                                 </li>
                                 <li class="dropdown">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $this->session->userdata('uname'); ?>
                                     <span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
+                                    <ul id="user" class="dropdown-menu">
                                       <li><a id="profile" class="sub_menu" href="#">Profile</a></li>
                                       <li><a id="settings" class="sub_menu" href="#">Settings</a></li>                                     
                                     </ul>

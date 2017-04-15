@@ -91,9 +91,9 @@ function get_user_menu(u){
     
     AjaxController.do_ajax(parm).then(function(x){
         if(x != false){
-            $("ul.dropdown-menu").empty();
+            $("ul#modules.dropdown-menu").empty();
             for(var i in x){
-                 $("ul.dropdown-menu").append('<li id="'+x[i]['module_id']+'"><a id="'+x[i]['name']+'" class="sub_module"><span class="modulelabel">'+x[i]['label']+'</span></a></li>');
+                 $("ul#modules.dropdown-menu").append('<li id="'+x[i]['module_id']+'"><a id="'+x[i]['name']+'" class="sub_module"><span class="modulelabel">'+x[i]['label']+'</span></a></li>');
             }               
         }
     });
