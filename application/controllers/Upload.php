@@ -12,8 +12,8 @@ class Upload extends CI_Controller {
         }
 
         public function do_upload(){
-echo realpath(dirname(__FILE__)."../../modules/custom/");            
-                $config['upload_path']          = realpath(dirname(__FILE__)."../../modules/custom/");
+                //exit(realpath(dirname(__FILE__)."../../modules/custom/"));            
+                $config['upload_path']          = realpath(dirname(__FILE__)."../../uploads/");
                 $config['allowed_types']        = 'gif|jpg|png|txt|zip';
                 $config['max_size']             = 100000;
                 $config['max_width']            = 1024;
