@@ -12,8 +12,7 @@ class Settings extends CI_Controller{
 		$details = $this->user_model->get_user_by_id($this->session->userdata('uid'));
 		$data['uname'] = $details[0]->fname . " " . $details[0]->lname;
 		$data['uemail'] = $details[0]->email;
-		$this->load->view('settings_view', $data);                
-                $uploads = get_filenames(APPPATH.'/modules/custom');
-                print_r($uploads);
+                $data['uploads'] = get_filenames(APPPATH.'/modules/custom');
+		$this->load->view('settings_view', $data);              
 	}
 }

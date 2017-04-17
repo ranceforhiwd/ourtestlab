@@ -32,7 +32,13 @@
         </div>
         <div class="section col-md-6">
             <h4>Installed Modules</h4>
-            <ul class="modulelist"></ul>
+            <ul class="modulelist">
+                <?php
+                    foreach ($uploads as $m) {
+                        echo '<li>'.$m.'</li>';
+                    }
+                ?>
+            </ul>
         </div>       			
     </div>
 </body>
