@@ -15,8 +15,7 @@ class Upload extends CI_Controller {
             if (!file_exists('application/modules/custom')) {
                 mkdir('application/modules/custom', 0777, true);
             }
-                //mkdir("application/modules/custom");
-                //exit(realpath(dirname(__FILE__)."../../modules/custom/"));            
+                
                 $config['upload_path']          = "application/modules/custom";
                 $config['allowed_types']        = 'gif|jpg|png|txt|zip';
                 $config['max_size']             = 100000;
@@ -30,7 +29,7 @@ class Upload extends CI_Controller {
                         $this->load->view('upload_form', $error);
                 }else{
                         $data = array('upload_data' => $this->upload->data());
-                        $this->load->view('home', $data);
+                        $this->load->view('home_view', $data);
                 }
         }
 }
