@@ -34,9 +34,11 @@
             <h4>Installed Modules</h4>
             <ul class="modulelist">
                 <?php
-                    foreach ($uploads as $m) {
-                        echo '<li>'.$m.'</li>';
-                    }
+                    if(isset($uploads) && !empty($uploads)){
+                        foreach ($uploads as $m) {
+                            echo '<li>'.$m.'</li>';
+                        }
+                    }                    
                 ?>
             </ul>
         </div>       			
