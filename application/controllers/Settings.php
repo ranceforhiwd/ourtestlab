@@ -13,7 +13,7 @@ class Settings extends CI_Controller{
 		$data['uname'] = $details[0]->fname . " " . $details[0]->lname;
 		$data['uemail'] = $details[0]->email;
 		$this->load->view('settings_view', $data);                
-                $uploads = get_filenames(APPPATH.'uploads/');
+                $uploads = get_filenames(APPPATH.'application/modules/custom/');
                 print_r($uploads);
 	}
 }
