@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     d3sp = Object.create(D3space);
     d3sp.init('rance');
-});
+//});
 
 /**********************Nav Bar Controls ****************************/
 $("body").on ("click", "a.header", function () {
@@ -102,3 +102,5 @@ function get_user_menu(u){
 /*AjaxController.do_ajax(parm).then(function(respJson){
    console.log(respJson[0].name); 
 });*/
+    
+});
