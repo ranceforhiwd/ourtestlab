@@ -1,7 +1,8 @@
 $( document ).ready(function() {
-    d3sp = Object.create(D3space);
+    var user = {};
+    var d3sp = Object.create(D3space);
     d3sp.init('rance');
-//});
+   
 
 /**********************Nav Bar Controls ****************************/
 $("body").on ("click", "a.header", function () {
@@ -22,9 +23,7 @@ $("body").on ("click", "a.main_menu", function () {
         dataType:'text'
     };
     
-    AjaxController.do_ajax(parm).done(function(x){        
-        $("div#module-container ").html(x);
-    });        
+    send_request(parm);        
 });
 
 $("body").on ("click", "a.sub_module", function () {
@@ -34,9 +33,7 @@ $("body").on ("click", "a.sub_module", function () {
         dataType:'text'
     };
     
-    AjaxController.do_ajax(parm).done(function(x){        
-        $("div#module-container").html(x);
-    });        
+    send_request(parm);       
 });
 
 $("body").on ("click", "a.sub_menu", function () {
@@ -47,11 +44,18 @@ $("body").on ("click", "a.sub_menu", function () {
     };
     
     $("body div#main.container div.d3space").hide();
-    
-    AjaxController.do_ajax(parm).done(function(x){        
-        $("div#module-container ").html(x);
-    });        
+    send_request(parm);            
 });
+/**
+ * 
+ * @param {mixed} $r
+ * @returns {void}
+ */
+function send_request($r){
+    AjaxController.do_ajax($r).done(function(x){        
+        $("div#module-container ").html(x);
+    });
+}
 /**
  * @function jsUcfirst
  * @description Forces the first letter to uppercase in a string
@@ -67,13 +71,19 @@ function jsUcfirst(string){
  * @returns {void}
  */
 function validate_session(){
-    parm = {type: "POST",url: '../home/validate_login',dataType:'json'};
+    parm = {
+        type: "POST",
+        url: '../home/validate_login',
+        dataType:'json'
+    };
      
-    AjaxController.do_ajax(parm).then(function(x){
+    return AjaxController.do_ajax(parm).then(function(x){
         if(x != false){
-                d3sp.destroy();
-                get_user_menu(x);
-            }        
+            d3sp.destroy();
+            //user.id = x;
+            //get_user_menu(x);
+            return x;
+        }        
     });    
 }
 /**
@@ -82,7 +92,7 @@ function validate_session(){
  * @param {int} u User id of logged in user.
  * @returns {void}
  */
-function get_user_menu(u){
+function get_user_menu(u){   
     var parm = {
         url:'../home/get_user_menu',
         data:{userid:u},
@@ -98,9 +108,7 @@ function get_user_menu(u){
         }
     });
 }
-    
-/*AjaxController.do_ajax(parm).then(function(respJson){
-   console.log(respJson[0].name); 
-});*/
+
+
     
 });

@@ -18,7 +18,6 @@ class Home extends CI_Controller{
             if(isset($details) && !empty($details)){
                 exit(json_encode($details[0]->id));
             }else{
-                  //$this->load->view('main_view.php');
                 exit(json_encode(false));
             }
         }
