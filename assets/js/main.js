@@ -27,6 +27,8 @@ $("body").on ("click", "a.main_menu", function () {
 });
 
 $("body").on ("click", "a.sub_module", function () {
+    $("body div#main.container div.d3space").hide();
+    
     var parm = {
         url: '../'+jsUcfirst(this.id)+'/'+this.id,
         data:{mod_name:this.id},
@@ -109,6 +111,6 @@ function get_user_menu(u){
     });
 }
 
-$("body div#navbar1 ul#modules.dropdown-menu").append('<li>Module 1</li>');
+
 get_user_menu(6);    
 });
