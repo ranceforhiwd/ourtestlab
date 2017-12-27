@@ -1,2 +1,2 @@
 console.log('start page js');
-$("ul#modules.dropdown-menu").append('<li>Module 1</li>');
+$("body div#navbar1 ul#modules.dropdown-menu").append('<li>Module 1</li>');
