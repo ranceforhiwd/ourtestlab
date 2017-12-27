@@ -1,3 +1,2 @@
-//current_session = validate_session();
 console.log('start page js');
-//alert(current_session);
+$("ul#modules.dropdown-menu").append('<li>Module 1</li>');
