@@ -125,12 +125,10 @@ function get_all_modules(){
     };
 
     AjaxController.do_ajax(parm).then(function(x){
-        if(x != false){
-            console.log(x);
+        if(x != false){            
             $("ul#modlist").empty();
-            for(var i in x){
-                 //$("ul#modlist").append('<li id="'+x[i]['module_id']+'"><a id="'+x[i]['name']+'" class="sub_module"><span class="modulelabel">'+x[i]['label']+'</span></a></li>');
-                 $("ul#modlist").append('<li style="list-style-type:none"><input type="checkbox" id="'+x[i]['module_id']+'" /><span class="modulelabel">'+x[i]['label']+'</span></li>');
+            for(var i in x){                 
+                 $("ul#modlist").append('<li style="list-style-type:none"><input type="checkbox" id="'+x[i]['module_id']+'" /><span style="margin-left:5px;" class="modulelabel">'+x[i]['label']+'</span></li>');
             }               
         }
     });    
