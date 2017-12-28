@@ -14,7 +14,7 @@
                                 <li class="dropdown">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">API docs
                                     <span class="caret"></span></a>
-                                    <ul id="modules" class="dropdown-menu">
+                                    <ul id="docs" class="dropdown-menu">
                                         <li id="php"><a>PHP</a></li>
                                         <li id="js"><a>JS</a></li>
                                     </ul>
