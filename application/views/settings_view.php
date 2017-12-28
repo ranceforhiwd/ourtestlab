@@ -50,8 +50,7 @@
         <div class="section col-md-6">
             <ul id="modlist"></ul>
         </div>
-        <div class="section col-md-6"></div>
-        <script>get_all_modules();</script>   
+        <div class="section col-md-6"></div>         
     </div>    
 </body>
 </html>

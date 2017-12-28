@@ -12,7 +12,13 @@ $("body").on ("click", "a.header", function () {
         success: function(resp){        
             $("html body div#main.container div#module-container").html(resp);
         }   
-    });   
+    });
+
+    console.log(this.id);
+    
+    if(this.id == 'settings'){
+        get_all_modules();
+    }
 });
 
 /*********************Side Bar Controls *****************************/
