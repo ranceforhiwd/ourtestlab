@@ -51,7 +51,6 @@
             <ul id="modlist"></ul>
         </div>
         <div class="section col-md-6"></div>   
-    </div>
-    <script type="text/javascript">get_all_modules()</script>
+    </div>    
 </body>
 </html>
