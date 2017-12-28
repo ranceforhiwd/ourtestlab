@@ -129,7 +129,8 @@ function get_all_modules(){
             console.log(x);
             $("ul#modlist").empty();
             for(var i in x){
-                 $("ul#modlist").append('<li id="'+x[i]['module_id']+'"><a id="'+x[i]['name']+'" class="sub_module"><span class="modulelabel">'+x[i]['label']+'</span></a></li>');
+                 //$("ul#modlist").append('<li id="'+x[i]['module_id']+'"><a id="'+x[i]['name']+'" class="sub_module"><span class="modulelabel">'+x[i]['label']+'</span></a></li>');
+                 $("ul#modlist").append('<li style="list-style-type:none"><input type="checkbox" id="'+x[i]['module_id']+'" /><span class="modulelabel">'+x[i]['label']+'</span></li>');
             }               
         }
     });    
