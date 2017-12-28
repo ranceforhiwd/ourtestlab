@@ -24,3 +24,6 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script> 
 <script src="https://d3js.org/d3.v4.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/frontengine.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/main.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/d3projects.js"></script> 
