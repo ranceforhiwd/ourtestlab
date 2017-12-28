@@ -43,5 +43,12 @@
             </ul>
         </div>       			
     </div>
+    <div class="col-md-12">
+        <div class="section">
+                <h3>Module Assignments</h3>           		
+        </div> 
+        <div class="section col-md-6"></div>
+        <div class="section col-md-6">available</div>   
+    </div>
 </body>
 </html>

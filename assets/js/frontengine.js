@@ -67,7 +67,6 @@ var Table = {
  * @type object
  * @description Wrapper objects for Full Calendar JS API
  */
-//(function () {
 var Calendar = {
     init: function(name) {       
         this.name = name;       
@@ -82,7 +81,7 @@ var Calendar = {
         $(" div#module-container div.mod div.module_content.row").append('<div id="calendar"></div>');              
     }
 };
-//}());
+
 /**
  * @class D3space
  * @type object
@@ -109,7 +108,6 @@ var Calendar = {
  * @type object
  * @description Wrapper objects created using Google Charts API
  */
-//(function () {
 var Chart = {
     /**
      * @function init
@@ -247,7 +245,7 @@ var Chart = {
       
     }
 };
-//}());
+
 /**
  * @class Editor
  * @description Wrapper object for text editor
@@ -260,7 +258,7 @@ var Editor = {
     },
     createEditor: function(n) {
         $(" div#module-container div.mod div.module_content.row").append('<textarea id="'+n+'">Type here...</textarea>');
-        //$(" div#module div.mod div.module_content").append('<textarea id="'+n+'">Type here...</textarea>');
+        
         tinymce.init({
             selector:'textarea',
             plugins: ["image", "code", "media"]
@@ -310,21 +308,11 @@ var AjaxController = (function () {
     return _results;
 })();
 
-/*var MyObject = {
-    init: function(name) {       
-        this.name = name;       
-        this.createMyObject();      
-    },
-    createMyObject: function() {
-        $(" div#module div.mod div.module_content").append('');              
-    }
-};*/
 /**
  * @class Module
  * @type object
  * @description Front end module object used by frontengine to render modules.
  */
-//(function () {
     Module = {
     /**
      * @function init
@@ -391,4 +379,13 @@ var AjaxController = (function () {
         
     }
 };
-//}());
+
+/*var MyObject = {
+    init: function(name) {       
+        this.name = name;       
+        this.createMyObject();      
+    },
+    createMyObject: function() {
+        $(" div#module div.mod div.module_content").append('');              
+    }
+};*/
