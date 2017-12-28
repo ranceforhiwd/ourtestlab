@@ -140,6 +140,7 @@ var Table = {
  * @type object
  * @description Wrapper objects for Full Calendar JS API
  */
+(function () {
 var Calendar = {
     init: function(name) {       
         this.name = name;       
@@ -154,6 +155,7 @@ var Calendar = {
         $(" div#module-container div.mod div.module_content.row").append('<div id="calendar"></div>');              
     }
 };
+}());
 /**
  * @class D3space
  * @type object
