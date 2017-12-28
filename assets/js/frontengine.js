@@ -180,6 +180,7 @@ var Calendar = {
  * @type object
  * @description Wrapper objects created using Google Charts API
  */
+(function () {
 var Chart = {
     /**
      * @function init
@@ -317,6 +318,7 @@ var Chart = {
       
     }
 };
+}());
 /**
  * @class Editor
  * @description Wrapper object for text editor
