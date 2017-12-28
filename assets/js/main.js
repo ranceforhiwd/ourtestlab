@@ -113,7 +113,7 @@ function get_user_menu(u){
 
 function get_all_modules(){
     var parm = {
-        url:'../settings/get_all_menu',
+        url:'../settings/getAllModules',
         data:{},
         dataType:'json'
     };
