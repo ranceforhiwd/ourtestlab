@@ -10,8 +10,15 @@
                         <a class="navbar-brand" href="<?php echo base_url(); ?>index.php/home">Test Lab</a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar1">
-                        <ul class="nav navbar-nav navbar-right">
-                                <li><a id="docs" class="main_menu">API Docs</a></li>
+                        <ul class="nav navbar-nav navbar-right">                                
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">API docs
+                                    <span class="caret"></span></a>
+                                    <ul id="modules" class="dropdown-menu">
+                                        <li id="php"><a>PHP</a></li>
+                                        <li id="js"><a>JS</a></li>
+                                    </ul>
+                                </li>
                                 <?php if ($this->session->userdata('login')){ ?>
                                 <li class="dropdown">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Modules
@@ -25,8 +32,7 @@
                                       <li><a id="profile" class="sub_menu" href="#">Profile</a></li>
                                       <li><a id="settings" class="sub_menu" href="#">Settings</a></li>                                     
                                     </ul>
-                                </li>
-                                <!--<li><p class="navbar-text">Hello <?php //echo $this->session->userdata('uname'); ?></p></li>-->
+                                </li>                                
                                 <li><a href="<?php echo base_url(); ?>index.php/home/logout">Log Out</a></li>
                                 <?php } else { ?>
                                 <li><a id="login" class="header">Login</a></li>
