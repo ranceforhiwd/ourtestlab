@@ -131,5 +131,4 @@ function get_all_modules(){
 
 
 get_user_menu(6);
-get_all_modules();    
 });
