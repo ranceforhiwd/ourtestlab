@@ -16,7 +16,7 @@
                                     <span class="caret"></span></a>
                                     <ul id="docs" class="dropdown-menu">
                                         <li id="php"><a>PHP</a></li>
-                                        <li id="js"><a>JS</a></li>
+                                        <li id="js"><a href="http://hiwd.biz/jsdoc" target="_blank">JS</a></li>
                                     </ul>
                                 </li>
                                 <?php if ($this->session->userdata('login')){ ?>
