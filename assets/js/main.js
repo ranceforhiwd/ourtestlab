@@ -114,7 +114,7 @@ function get_user_menu(u){
 function get_all_modules(){
     var parm = {
         url:'../settings/get_all_menu',
-        data:{userid:u},
+        data:{},
         dataType:'json'
     };
 
