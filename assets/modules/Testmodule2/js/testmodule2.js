@@ -38,6 +38,6 @@ $( document ).ready(function() {
     ch.push(chtObj3);
     /**********************Instanciate objects *************************/
     var testMod2 = Object.create(Module);     
-    testMod2.init('Another Test Module','','',ch);
+    testMod2.init('Another Test Module','','',ch,'','');
      
 });
