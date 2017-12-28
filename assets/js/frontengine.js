@@ -157,7 +157,7 @@ var Chart = {
      * @returns {void}
      */
     createBarChart: function(n, d) {       
-      $(" div#module div.mod div.module_content").append('<div class="barchart" id="chart_bar"></div>');
+        $(" div#module-container div.mod div.module_content.row").append('<div class="barchart" id="chart_bar"></div>');
       
       // Load the Visualization API and the corechart package.
       google.charts.load('current', {'packages':['corechart']});
@@ -189,7 +189,7 @@ var Chart = {
      * @returns {void}
      */
     createPieChart: function(n, d) {       
-      $(" div#module div.mod div.module_content").append('<div class="piechart" id="chart_pie"></div>');
+        $(" div#module-container div.mod div.module_content.row").append('<div class="piechart" id="chart_pie"></div>');
       
       // Load the Visualization API and the corechart package.
       google.charts.load('current', {'packages':['corechart']});
@@ -220,7 +220,7 @@ var Chart = {
      * @returns {void}
      */
     createLineChart: function(n, d) {       
-      $(" div#module div.mod div.module_content").append('<div id="curve_chart" style="width: 900px; height: 500px"></div>');
+        $(" div#module-container div.mod div.module_content.row").append('<div id="curve_chart" style="width: 900px; height: 500px"></div>');
       
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
@@ -280,7 +280,7 @@ var DateRangePicker = {
         this.createDateRangePicker();      
     },
     createDateRangePicker: function() {
-        $(" div#module div.mod div.module_content").append('<input type="text" name="daterange" />');
+        $(" div#module-container div.mod div.module_content.row").append('<input type="text" name="daterange" />');
         
         $('input[name="daterange"]').daterangepicker();
     }
