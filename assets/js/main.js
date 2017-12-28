@@ -13,12 +13,6 @@ $("body").on ("click", "a.header", function () {
             $("html body div#main.container div#module-container").html(resp);
         }   
     });
-
-    console.log(this.id);
-    
-    if(this.id == 'settings'){
-        get_all_modules();
-    }
 });
 
 /*********************Side Bar Controls *****************************/
@@ -52,7 +46,13 @@ $("body").on ("click", "a.sub_menu", function () {
     };
     
     $("body div#main.container div.d3space").hide();
-    send_request(parm);            
+    send_request(parm); 
+    
+    console.log(this.id);
+    
+    if(this.id == 'settings'){
+        get_all_modules();
+    }
 });
 /**
  * 
