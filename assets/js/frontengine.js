@@ -67,7 +67,7 @@ var Table = {
  * @type object
  * @description Wrapper objects for Full Calendar JS API
  */
-(function () {
+//(function () {
 var Calendar = {
     init: function(name) {       
         this.name = name;       
@@ -82,7 +82,7 @@ var Calendar = {
         $(" div#module-container div.mod div.module_content.row").append('<div id="calendar"></div>');              
     }
 };
-}());
+//}());
 /**
  * @class D3space
  * @type object
@@ -109,7 +109,7 @@ var Calendar = {
  * @type object
  * @description Wrapper objects created using Google Charts API
  */
-(function () {
+//(function () {
 var Chart = {
     /**
      * @function init
@@ -247,7 +247,7 @@ var Chart = {
       
     }
 };
-}());
+//}());
 /**
  * @class Editor
  * @description Wrapper object for text editor
@@ -323,7 +323,7 @@ var AjaxController = (function () {
  * @type object
  * @description Front end module object used by frontengine to render modules.
  */
-(function () {
+//(function () {
     Module = {
     /**
      * @function init
@@ -390,4 +390,4 @@ var AjaxController = (function () {
         
     }
 };
-}());
+//}());
