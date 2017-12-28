@@ -63,79 +63,6 @@ var Table = {
     }
 };
 /**
- * @class Module
- * @type object
- * @description Front end module object used by frontengine to render modules.
- */
-(function () {
-    Module = {
-    /**
-     * @function init
-     * @memberOf Module
-     * @description Initialize module object using arrays of frontend objects 
-     * as parameters to build a module.
-     * @param {string} name Module name
-     * @param {array} tbl Array of table objects
-     * @param {array} cal Array of calendar objects
-     * @param {array} cht Array of chart objects
-     * @param {array} edt Array of editor objects
-     * @param {array} drp Array of date range picker objects
-     * @returns {void}
-     */
-    init: function(name, tbl, cal, cht, edt, drp) {        
-        this.name = name;
-        this.tables = tbl;
-        this.cal = cal;
-        this.chart = cht;
-        this.editor = edt;
-        this.daterange = drp;
-        this.createModule();        
-    },
-    /**
-     * @function createModule
-     * @description Create front end module object
-     * @memberOf Module
-     * @returns {void}
-     */
-    createModule: function() {        
-        $("body div#main.container.row.col-md-12 div#module-container div#container").html('<div class="mod" />');
-        $("div.mod").append('<div class="row"><h3 style="padding:25px;">'+this.name+'</h3></div>');
-        $("div.mod").append('<div style="padding:25px;" class="module_content row"></div>');
-        var t = [];
-        var c = [];
-        var ch = [];
-        var ed = [];
-        var dr = [];
-        
-        for(var k in this.tables){
-            t[k] = Object.create(Table);
-            t[k].init(this.tables[k].name, this.tables[k].url, this.tables[k].columns);
-        }
-        
-        for(var k in this.cal){
-            c[k] = Object.create(Calendar);
-            c[k].init(this.cal[k].name);
-        }
-                
-        for(var k in this.chart){
-            ch[k] = Object.create(Chart);
-            ch[k].init(this.chart[k].name, this.chart[k].type, this.chart[k].data);
-        }
-        
-        for(var k in this.editor){
-            ed[k] = Object.create(Editor);
-            ed[k].init(this.editor[k].name, this.editor[k].type, this.editor[k].data);
-        }
-        
-        for(var k in this.daterange){
-            dr[k] = Object.create(DateRangePicker);
-            dr[k].init(this.daterange[k].name,this.daterange[k].start,this.daterange[k].end);
-        }
-        
-    }
-};
-}());
-/**
  * @class Calendar
  * @type object
  * @description Wrapper objects for Full Calendar JS API
@@ -391,3 +318,76 @@ var AjaxController = (function () {
         $(" div#module div.mod div.module_content").append('');              
     }
 };*/
+/**
+ * @class Module
+ * @type object
+ * @description Front end module object used by frontengine to render modules.
+ */
+(function () {
+    Module = {
+    /**
+     * @function init
+     * @memberOf Module
+     * @description Initialize module object using arrays of frontend objects 
+     * as parameters to build a module.
+     * @param {string} name Module name
+     * @param {array} tbl Array of table objects
+     * @param {array} cal Array of calendar objects
+     * @param {array} cht Array of chart objects
+     * @param {array} edt Array of editor objects
+     * @param {array} drp Array of date range picker objects
+     * @returns {void}
+     */
+    init: function(name, tbl, cal, cht, edt, drp) {        
+        this.name = name;
+        this.tables = tbl;
+        this.cal = cal;
+        this.chart = cht;
+        this.editor = edt;
+        this.daterange = drp;
+        this.createModule();        
+    },
+    /**
+     * @function createModule
+     * @description Create front end module object
+     * @memberOf Module
+     * @returns {void}
+     */
+    createModule: function() {        
+        $("body div#main.container.row.col-md-12 div#module-container div#container").html('<div class="mod" />');
+        $("div.mod").append('<div class="row"><h3 style="padding:25px;">'+this.name+'</h3></div>');
+        $("div.mod").append('<div style="padding:25px;" class="module_content row"></div>');
+        var t = [];
+        var c = [];
+        var ch = [];
+        var ed = [];
+        var dr = [];
+        
+        for(var k in this.tables){
+            t[k] = Object.create(Table);
+            t[k].init(this.tables[k].name, this.tables[k].url, this.tables[k].columns);
+        }
+        
+        for(var k in this.cal){
+            c[k] = Object.create(Calendar);
+            c[k].init(this.cal[k].name);
+        }
+                
+        for(var k in this.chart){
+            ch[k] = Object.create(Chart);
+            ch[k].init(this.chart[k].name, this.chart[k].type, this.chart[k].data);
+        }
+        
+        for(var k in this.editor){
+            ed[k] = Object.create(Editor);
+            ed[k].init(this.editor[k].name, this.editor[k].type, this.editor[k].data);
+        }
+        
+        for(var k in this.daterange){
+            dr[k] = Object.create(DateRangePicker);
+            dr[k].init(this.daterange[k].name,this.daterange[k].start,this.daterange[k].end);
+        }
+        
+    }
+};
+}());
