@@ -259,7 +259,8 @@ var Editor = {
         this.createEditor(this.name);      
     },
     createEditor: function(n) {
-        $(" div#module div.mod div.module_content").append('<textarea id="'+n+'">Type here...</textarea>');
+        $(" div#module-container div.mod div.module_content.row").append('<textarea id="'+n+'">Type here...</textarea>');
+        //$(" div#module div.mod div.module_content").append('<textarea id="'+n+'">Type here...</textarea>');
         tinymce.init({
             selector:'textarea',
             plugins: ["image", "code", "media"]
