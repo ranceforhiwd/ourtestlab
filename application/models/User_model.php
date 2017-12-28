@@ -30,6 +30,13 @@ class User_model extends CI_Model
                 $query = $this->db->get('user_module');
 		return $query->result();
 	}
+
+	// get all modules
+	function get_all_modules(){		
+		$query = $this->db->get('modules');
+		return $query->result();
+	}
+
 	
 	// insert
 	function insert_user($data)

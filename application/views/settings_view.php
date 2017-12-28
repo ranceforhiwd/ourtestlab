@@ -47,8 +47,11 @@
         <div class="section">
                 <h3>Module Assignments</h3>           		
         </div> 
-        <div class="section col-md-6"></div>
-        <div class="section col-md-6">available</div>   
+        <div class="section col-md-6">
+            <ul id="modlist"></ul>
+        </div>
+        <div class="section col-md-6"></div>   
     </div>
+    <script type="text/javascript">get_all_modules()</script>
 </body>
 </html>

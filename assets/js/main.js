@@ -28,7 +28,7 @@ $("body").on ("click", "a.main_menu", function () {
 
 $("body").on ("click", "a.sub_module", function () {
     $("body div#main.container div.d3space").hide();
-    
+
     var parm = {
         url: '../'+jsUcfirst(this.id)+'/'+this.id,
         data:{mod_name:this.id},
@@ -109,6 +109,24 @@ function get_user_menu(u){
             }               
         }
     });
+}
+
+function get_all_modules(){
+    var parm = {
+        url:'../settings/get_all_menu',
+        data:{userid:u},
+        dataType:'json'
+    };
+
+    AjaxController.do_ajax(parm).then(function(x){
+        if(x != false){
+            console.log(x);
+            /*$("ul#modules.dropdown-menu").empty();
+            for(var i in x){
+                 $("ul#modules.dropdown-menu").append('<li id="'+x[i]['module_id']+'"><a id="'+x[i]['name']+'" class="sub_module"><span class="modulelabel">'+x[i]['label']+'</span></a></li>');
+            }*/               
+        }
+    });    
 }
 
 
