@@ -1,3 +1,6 @@
+/**
+ * Added comment for test with Github and VS Code
+ */
 $( document ).ready(function() {
     var user = {};
     var d3sp = Object.create(D3space);
