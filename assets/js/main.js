@@ -1,5 +1,5 @@
 /**
- * Added comment for test with Github and VS Code
+ * Added comment for test with Github and VS Code again
  */
 $( document ).ready(function() {
     var user = {};

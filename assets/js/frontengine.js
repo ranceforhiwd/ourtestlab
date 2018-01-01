@@ -1,5 +1,5 @@
 /**
- * @author Rance Aaron
+ * @author Rance Aaron 2018
  * @class Table
  * @type object
  * @version 1.5 Under Git control and Grunt task managers. 
