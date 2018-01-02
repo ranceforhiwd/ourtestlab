@@ -1,5 +1,5 @@
-<div id="main" class="container row col-md-12">
-     <div class="msg"></div>
+<div id="main" style='background-image: url("images/wallpaper1.jpg");'  class="container row col-md-12">
+     <div class="msg">Messages</div>
 	<div id="module-container">
             <div id="module" ></div>	           
 	</div>        
