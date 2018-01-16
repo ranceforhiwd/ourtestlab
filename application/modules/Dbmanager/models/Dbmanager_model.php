@@ -1,5 +1,9 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-/* @author: Rance Aaron * Description: Database Manager model class */
+/**
+ * Database manager main model
+ * @author Rance Aaron
+ * @package Dbmanager
+ */
 class Dbmanager_model extends CI_Model{ 
     public $exclude = array('tmp_', 'test_');
     public $ExcludeTables = array('piwik_visits');

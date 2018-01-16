@@ -1,5 +1,9 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
+/**
+ * This is the main module model
+ * @author Rance Aaron
+ * @package Testmodule3
+ */
 class Testmodule3_model extends CI_Model{
 	function __construct(){
             parent::__construct();

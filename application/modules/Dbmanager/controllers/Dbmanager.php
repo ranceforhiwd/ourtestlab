@@ -1,6 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+/**
+ * Database manager main controller
+ * @author Rance Aaron
+ * @package Dbmanager
+ */
 class Dbmanager extends MX_Controller {
         
 public $add = array();

@@ -1,6 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+/**
+ * This is the main module controller
+ * @author Rance Aaron
+ * @package Testmodule2
+ */
 class Testmodule2 extends MX_Controller {
         
         public function __construct(){
