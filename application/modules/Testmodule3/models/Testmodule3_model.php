@@ -2,7 +2,7 @@
 /**
  * This is the main module model
  * @author Rance Aaron
- * @package Modules/Testmodule3
+ * @package Modules\Testmodule3
  */
 class Testmodule3_model extends CI_Model{
 	function __construct(){

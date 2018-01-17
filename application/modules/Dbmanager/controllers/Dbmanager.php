@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 /**
  * Database manager main controller
  * @author Rance Aaron
- * @package Dbmanager
+ * @package Modules\Dbmanager
  */
 class Dbmanager extends MX_Controller {
         
