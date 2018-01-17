@@ -2,7 +2,7 @@
 /**
  * This is the main module model
  * @author Rance Aaron
- * @package Modules\Testmodule1
+ * @package Testmodule1
  */
 class Testmodule1_model extends CI_Model
 {

@@ -2,7 +2,7 @@
 /**
  * Database manager main model
  * @author Rance Aaron
- * @package Modules\Dbmanager
+ * @package Dbmanager
  */
 class Dbmanager_model extends CI_Model{ 
     public $exclude = array('tmp_', 'test_');

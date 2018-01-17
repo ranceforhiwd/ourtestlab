@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 /**
  * This is the main module controller
  * @author Rance Aaron
- * @package Modules\Testmodule3
+ * @package Testmodule3
  */
 class Testmodule3 extends MX_Controller {
         

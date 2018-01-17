@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 /**
  * This is the main module controller
  * @author Rance Aaron
- * @package Modules\Testmodule1
+ * @package Testmodule1
  */
 class Testmodule1 extends MX_Controller {        
         public function __construct(){
